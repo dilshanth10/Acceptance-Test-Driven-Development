@@ -1,0 +1,4 @@
+2018-11-25 10:50:37.057 [main] INFO  com.sgic.automation.demo.pages.LoginPage >> Entered username : Admin
+2018-11-25 10:50:37.207 [main] INFO  com.sgic.automation.demo.pages.LoginPage >> Entered password : admin123
+2018-11-25 10:50:39.313 [main] INFO  com.sgic.automation.demo.pages.LoginPage >>  Clicked login button
+2018-11-25 10:50:39.317 [main] INFO  com.sgic.automation.demo.pages.DashboardPage >> Checking if dashboard displayed
