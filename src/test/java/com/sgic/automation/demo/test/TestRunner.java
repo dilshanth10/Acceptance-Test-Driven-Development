@@ -6,7 +6,8 @@ import cucumber.api.junit.Cucumber;
 
 @CucumberOptions(
     features = {"src\\test\\resources\\features"},
-    glue = {"com.sgic.automation.demo.steps"}
+    glue = {"com.sgic.automation.demo.steps"},
+    tags = {"@ValidCredentials, @InvalidCredentials"}
     )
 @RunWith(Cucumber.class)
 public class TestRunner {

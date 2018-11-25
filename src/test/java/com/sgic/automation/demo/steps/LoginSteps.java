@@ -1,5 +1,6 @@
 package com.sgic.automation.demo.steps;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -43,6 +44,12 @@ public class LoginSteps {
   public void i_should_navigate_to_dashboard_page() throws Throwable {
     DashboardPage dashboardPage = new DashboardPage(driver);
     assertTrue(dashboardPage.isDashboardDisplayed());
+  }
+  
+  @Then("^I show get error message \"([^\"]*)\"$")
+  public void i_show_get_error_message(String expMessage) throws Throwable {
+      LoginPage loginPage = new LoginPage(driver);
+      assertEquals(expMessage, loginPage.getErrorMessage());
   }
 
 }
