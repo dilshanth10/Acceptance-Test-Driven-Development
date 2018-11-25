@@ -17,7 +17,8 @@ public class LoginSteps {
   
   @Before
   public void setupTest(){
-    String driverPathChrome = "C:\\Users\\Dilshanth\\Documents\\GitHub\\eclipse\\atdd\\webdrivers\\chromedriver.exe";
+//    String driverPathChrome = "C:\\Users\\Dilshanth\\Documents\\GitHub\\eclipse\\atdd\\webdrivers\\chromedriver.exe";
+    String driverPathChrome = System.getProperty("user.dir") + "\\webdrivers\\chromedriver.exe";
     System.setProperty("webdriver.chrome.driver", driverPathChrome);
     driver = new ChromeDriver();
   }
